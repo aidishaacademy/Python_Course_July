@@ -1,0 +1,598 @@
+1. What are arithmetic operators in Python?
+
+Answer:
+
+Arithmetic operators are symbols used to perform mathematical calculations on numbers.
+
+Python supports 7 arithmetic operators:
+
+* + Addition
+* - Subtraction
+* * Multiplication
+* / Division
+* // Floor Division
+* % Modulus
+* ** Exponentiation
+
+⸻
+
+2. Which arithmetic operators are available in Python?
+
+Answer:
+
+Python provides the following arithmetic operators:
+
++
+-
+*
+/
+/ /
+%
+**
+
+Each operator performs a different mathematical operation.
+
+⸻
+
+3. What does the addition (+) operator do?
+
+Answer:
+
+The + operator adds two numbers.
+
+Example:
+
+a = 10
+b = 20
+print(a + b)
+
+Output:
+
+30
+
+⸻
+
+4. What does the subtraction (-) operator do?
+
+Answer:
+
+The - operator subtracts one value from another.
+
+Example:
+
+20 - 5
+
+Output:
+
+15
+
+⸻
+
+5. What does the multiplication (*) operator do?
+
+Answer:
+
+The * operator multiplies two values.
+
+Example:
+
+5 * 4
+
+Output:
+
+20
+
+⸻
+
+6. What is the division (/) operator?
+
+Answer:
+
+The / operator performs normal division and always returns a float.
+
+Example:
+
+10 / 2
+
+Output:
+
+5.0
+
+⸻
+
+7. Why does division always return a float?
+
+Answer:
+
+In Python 3, the / operator always returns a floating-point value, even if the result is a whole number.
+
+Example:
+
+8 / 4
+
+Output:
+
+2.0
+
+⸻
+
+8. What is floor division (//)?
+
+Answer:
+
+Floor division returns the largest whole number less than or equal to the result of the division.
+
+Example:
+
+10 // 3
+
+Output:
+
+3
+
+⸻
+
+9. What is the difference between / and //?
+
+Answer:
+
+/	//
+Returns float	Returns integer (floor value)
+Normal division	Floor division
+
+Example:
+
+10 / 3
+
+Output:
+
+3.3333
+10 // 3
+
+Output:
+
+3
+
+⸻
+
+10. What is the modulus (%) operator?
+
+Answer:
+
+The modulus operator returns the remainder after division.
+
+Example:
+
+10 % 3
+
+Output:
+
+1
+
+⸻
+
+11. Where is the modulus operator used?
+
+Answer:
+
+It is commonly used for:
+
+* Checking even or odd numbers
+* Finding remainders
+* Circular indexing
+* Divisibility checks
+
+⸻
+
+12. How do you check whether a number is even?
+
+Answer:
+
+Use the modulus operator.
+
+if num % 2 == 0:
+    print("Even")
+
+⸻
+
+13. What is the exponentiation operator?
+
+Answer:
+
+The ** operator raises a number to a power.
+
+Example:
+
+2 ** 5
+
+Output:
+
+32
+
+⸻
+
+14. What is operator precedence?
+
+Answer:
+
+Operator precedence determines the order in which operators are evaluated in an expression.
+
+⸻
+
+15. Which operator has the highest precedence?
+
+Answer:
+
+Parentheses () have the highest precedence.
+
+⸻
+
+16. What is the precedence order in Python?
+
+Answer:
+
+Highest to Lowest:
+
+()
+**
+*, /, //, %
++, -
+
+⸻
+
+17. Why is operator precedence important?
+
+Answer:
+
+It ensures expressions are evaluated correctly and helps avoid logical errors.
+
+⸻
+
+18. What is the output?
+
+2 + 3 * 4
+
+Answer:
+
+14
+
+Multiplication is evaluated before addition.
+
+⸻
+
+19. What is the output?
+
+(2 + 3) * 4
+
+Answer:
+
+20
+
+Parentheses are evaluated first.
+
+⸻
+
+20. What is the output?
+
+10 - 2 + 3
+
+Answer:
+
+11
+
+Operators with the same precedence are evaluated from left to right.
+
+⸻
+
+21. What is the output?
+
+2 ** 3 ** 2
+
+Answer:
+
+512
+
+Exponentiation is evaluated right to left.
+
+Calculation:
+
+3² = 9
+2⁹ = 512
+
+⸻
+
+22. What is the output?
+
+5 + 6 * 2 - 3
+
+Answer:
+
+14
+
+Calculation:
+
+6*2 = 12
+5+12 =17
+17-3 =14
+
+⸻
+
+23. What is the output?
+
+20 // 6
+
+Answer:
+
+3
+
+⸻
+
+24. What is the output?
+
+20 % 6
+
+Answer:
+
+2
+
+⸻
+
+25. What is the output?
+
+3 ** 4
+
+Answer:
+
+81
+
+⸻
+
+26. What is the output?
+
+5 / 2
+
+Answer:
+
+2.5
+
+⸻
+
+27. What is the output?
+
+5 // 2
+
+Answer:
+
+2
+
+⸻
+
+28. What is the output?
+
+5 % 2
+
+Answer:
+
+1
+
+⸻
+
+29. What is the output?
+
+9 // 4
+
+Answer:
+
+2
+
+⸻
+
+30. What is the output?
+
+9 / 4
+
+Answer:
+
+2.25
+
+⸻
+
+31. What is the output?
+
+2 + 3 * 2 ** 2
+
+Answer:
+
+14
+
+Calculation:
+
+2² = 4
+3×4 =12
+2+12 =14
+
+⸻
+
+32. What is the output?
+
+(5 + 5) // 3
+
+Answer:
+
+3
+
+⸻
+
+33. What happens when you divide a number by zero?
+
+Answer:
+
+Python raises a ZeroDivisionError.
+
+Example:
+
+10 / 0
+
+Produces:
+
+ZeroDivisionError
+
+⸻
+
+34. Can arithmetic operators be used with floating-point numbers?
+
+Answer:
+
+Yes.
+
+All arithmetic operators work with integers and floating-point numbers.
+
+⸻
+
+35. Can arithmetic operators be used with variables?
+
+Answer:
+
+Yes.
+
+Example:
+
+a = 5
+b = 10
+print(a + b)
+
+Output:
+
+15
+
+⸻
+
+36. What is the difference between multiplication (*) and exponentiation (**)?
+
+Answer:
+
+* multiplies two numbers.
+
+Example:
+
+5 * 2
+
+Output:
+
+10
+
+** raises a number to a power.
+
+Example:
+
+5 ** 2
+
+Output:
+
+25
+
+⸻
+
+37. Which operator is commonly used to calculate the square of a number?
+
+Answer:
+
+The exponentiation operator.
+
+Example:
+
+number ** 2
+
+⸻
+
+38. Give a real-world example of using the modulus operator.
+
+Answer:
+
+The modulus operator is useful for checking whether a number is even or odd.
+
+if number % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+⸻
+
+39. Why should we use parentheses in complex expressions?
+
+Answer:
+
+Parentheses improve readability and ensure expressions are evaluated in the intended order, reducing the chance of logical errors.
+
+⸻
+
+40. Which arithmetic operator do you use most frequently in Python projects?
+
+Answer:
+
+The most frequently used operators are:
+
+* + for addition and string concatenation
+* - for subtraction
+* * for multiplication
+* / for division
+* % for checking even/odd numbers and remainders
+
+These operators are commonly used in calculations, loops, conditions, and business logic.
+
+⸻
+
+Coding-Based Interview Questions
+
+41. Write a program to check whether a number is even or odd.
+
+Answer:
+
+num = int(input("Enter a number: "))
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+⸻
+
+42. Write a program to calculate the square of a number.
+
+Answer:
+
+num = int(input("Enter a number: "))
+print(num ** 2)
+
+⸻
+
+43. Write a program to calculate the cube of a number.
+
+Answer:
+
+num = int(input("Enter a number: "))
+print(num ** 3)
+
+⸻
+
+44. Write a program to swap two numbers without using a third variable.
+
+Answer:
+
+a = 10
+b = 20
+a, b = b, a
+print(a, b)
+
+⸻
+
+45. Write a program to calculate the quotient and remainder.
+
+Answer:
+
+a = 25
+b = 4
+print("Quotient:", a // b)
+print("Remainder:", a % b)
+
+⸻
+
