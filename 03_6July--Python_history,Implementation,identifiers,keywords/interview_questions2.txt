@@ -1,0 +1,364 @@
+1. What is Python?
+
+Answer:
+Python is a high-level, interpreted, object-oriented, and general-purpose programming language. It is easy to learn because of its simple syntax and is widely used in Web Development, Data Science, Automation, AI, and Machine Learning.
+
+⸻
+
+2. Who developed Python?
+
+Answer:
+Python was developed by Guido van Rossum and was first released in 1991.
+
+⸻
+
+3. Why was Python created?
+
+Answer:
+Python was created to make programming simple, readable, and easy to maintain while improving developer productivity.
+
+⸻
+
+4. Which Python version should we use?
+
+Answer:
+We should always use Python 3 because Python 2 reached its end of life in 2020 and no longer receives updates or security fixes.
+
+⸻
+
+5. What is the difference between Python 2 and Python 3?
+
+Answer:
+
+Python 2	Python 3
+Retired	Current version
+print “Hello”	print(“Hello”)
+5/2 = 2	5/2 = 2.5
+ASCII by default	Unicode by default
+
+Python 3 is faster, more secure, and recommended for all new projects.
+
+⸻
+
+6. Is Python compiled or interpreted?
+
+Answer:
+Python is both.
+
+First, Python source code is compiled into Bytecode.
+
+Then, the Python Virtual Machine (PVM) interprets and executes the bytecode.
+
+⸻
+
+7. What is Bytecode?
+
+Answer:
+Bytecode is an intermediate code generated after compiling a Python program.
+
+It is platform-independent and executed by the Python Virtual Machine (PVM).
+
+⸻
+
+8. What is PVM?
+
+Answer:
+PVM stands for Python Virtual Machine.
+
+It reads and executes Python bytecode and converts it into machine instructions for the operating system.
+
+⸻
+
+9. Why is Python called platform independent?
+
+Answer:
+Python programs are first converted into bytecode.
+
+The same bytecode can run on Windows, Linux, and macOS using their respective Python Virtual Machines.
+
+That’s why Python follows Write Once, Run Anywhere.
+
+⸻
+
+10. What is CPython?
+
+Answer:
+CPython is the standard implementation of Python.
+
+It is written in the C programming language and is used by around 95% of Python developers.
+
+⸻
+
+11. What are different Python implementations?
+
+Answer:
+
+* CPython – Standard implementation written in C.
+* PyPy – Faster implementation using JIT compiler.
+* Jython – Runs on JVM.
+* IronPython – Runs on the .NET Framework.
+
+⸻
+
+12. Which Python implementation is most commonly used?
+
+Answer:
+CPython is the most commonly used implementation because it is the official Python interpreter.
+
+⸻
+
+13. What is PyPy?
+
+Answer:
+PyPy is a Python implementation that uses a Just-In-Time (JIT) compiler to improve execution speed.
+
+⸻
+
+14. What is Jython?
+
+Answer:
+Jython is a Python implementation that runs on the Java Virtual Machine (JVM), allowing Python programs to interact with Java libraries.
+
+⸻
+
+15. What is IronPython?
+
+Answer:
+IronPython is a Python implementation that runs on Microsoft’s .NET Framework.
+
+⸻
+
+16. What is the difference between Machine Code and Bytecode?
+
+Answer:
+
+Machine Code:
+
+* Directly understood by the CPU.
+* Very fast.
+* Platform dependent.
+
+Bytecode:
+
+* Intermediate code.
+* Executed by PVM.
+* Platform independent.
+
+⸻
+
+17. What is a .py file?
+
+Answer:
+A .py file contains Python source code written by the programmer.
+
+⸻
+
+18. What is a .pyc file?
+
+Answer:
+A .pyc file contains compiled Python bytecode generated automatically by Python.
+
+It helps Python execute programs faster.
+
+⸻
+
+19. Where are .pyc files stored?
+
+Answer:
+They are stored inside the __pycache__ folder.
+
+⸻
+
+20. Which command compiles a Python file?
+
+Answer:
+
+python -m py_compile main.py
+
+This generates a .pyc file inside the __pycache__ directory.  
+
+⸻
+
+21. How do you check whether Python is installed?
+
+Answer:
+
+python --version
+
+or
+
+python -V
+
+⸻
+
+22. Why should we add Python to PATH during installation?
+
+Answer:
+Adding Python to PATH allows us to run Python commands from any terminal or command prompt without specifying the full installation path.
+
+⸻
+
+23. What happens if Python is not added to PATH?
+
+Answer:
+The terminal displays an error like:
+
+'python' is not recognized as an internal or external command.
+
+⸻
+
+24. What is an Identifier?
+
+Answer:
+An identifier is the name given to variables, functions, classes, or modules in Python.
+
+Example:
+
+name = "John"
+
+Here, name is an identifier.
+
+⸻
+
+25. What are the rules for naming identifiers?
+
+Answer:
+
+* Must start with a letter or underscore (_)
+* Cannot start with a number
+* Can contain letters, digits, and underscores
+* Cannot contain spaces
+* Cannot use keywords
+* Case-sensitive
+
+⸻
+
+26. Can an identifier start with a number?
+
+Answer:
+No.
+
+Example:
+
+1name = "John"
+
+This is invalid.
+
+⸻
+
+27. Is Python case-sensitive?
+
+Answer:
+Yes.
+
+Example:
+
+age = 20
+Age = 30
+
+These are two different variables.
+
+⸻
+
+28. What are Python keywords?
+
+Answer:
+Keywords are reserved words with predefined meanings in Python.
+
+They cannot be used as variable names.
+
+Examples:
+
+if
+else
+for
+while
+class
+return
+True
+False
+None
+
+⸻
+
+29. Can keywords be used as variable names?
+
+Answer:
+No.
+
+Example:
+
+class = 10
+
+This produces a SyntaxError.
+
+⸻
+
+30. How do you find all Python keywords?
+
+Answer:
+
+import keyword
+print(keyword.kwlist)
+
+⸻
+
+31. How many keywords are there in Python?
+
+Answer:
+The number depends on the Python version.
+
+Python 3.13 has around 35+ keywords, and new versions may introduce additional keywords.
+
+⸻
+
+32. What is the difference between a keyword and an identifier?
+
+Answer:
+
+Keyword:
+
+* Reserved word
+* Cannot be used as a variable name
+
+Identifier:
+
+* User-defined name
+* Used for variables, functions, and classes
+
+⸻
+
+33. Why is Python popular?
+
+Answer:
+
+* Easy to learn
+* Simple syntax
+* Large community
+* Cross-platform
+* Huge library support
+* Used in AI, ML, Data Science, Web Development, Automation, and Cloud.
+
+⸻
+
+34. Why is Python slower than C?
+
+Answer:
+Python is interpreted and dynamically typed, which makes it slower than C.
+
+However, Python offers faster development and better readability.
+
+⸻
+
+35. Why do companies prefer Python?
+
+Answer:
+Companies prefer Python because it reduces development time, has extensive libraries, is easy to maintain, and is suitable for many domains such as AI, Data Science, Automation, and Web Development.
+
+⸻
+
+Why did you choose Python?
+
+Answer:
+I chose Python because it has simple syntax, a large ecosystem of libraries, and is widely used in automation, web development, data science, AI, and machine learning. It allows me to develop applications quickly while writing clean and maintainable code.
+

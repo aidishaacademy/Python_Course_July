@@ -1,0 +1,225 @@
+1. What is a variable in Python?
+
+Answer:
+
+A variable is a name used to store data in memory.
+
+Example:
+
+age = 25
+name = "John"
+
+Python automatically creates the variable when a value is assigned.
+
+⸻
+
+2. Does Python require variable declaration?
+
+Answer:
+
+No.
+
+Python is dynamically typed, so variables are created automatically when a value is assigned.
+
+Example:
+
+salary = 50000
+
+There is no need to specify the data type.
+
+⸻
+
+3. What is Dynamic Typing?
+
+Answer:
+
+Dynamic typing means Python determines the data type at runtime.
+
+The same variable can store different types of values.
+
+Example:
+
+x = 10
+x = 10.5
+x = "Python"
+
+⸻
+
+4. Is Python statically typed or dynamically typed?
+
+Answer:
+
+Python is a dynamically typed language because the type is decided during runtime.
+
+⸻
+
+5. How do you check the data type of a variable?
+
+Answer:
+
+Using the type() function.
+
+Example:
+
+x = 100
+print(type(x))
+
+Output:
+
+<class 'int'>
+
+⸻
+
+6. What are the basic data types in Python?
+
+Answer:
+
+The basic data types are:
+
+* int
+* float
+* complex
+* bool
+* str
+
+⸻
+
+7. What are container data types in Python?
+
+Answer:
+
+Container data types are:
+
+* List
+* Tuple
+* Set
+* Dictionary
+
+They are used to store multiple values.
+
+⸻
+
+8. What is an integer in Python?
+
+Answer:
+
+An integer is a whole number without a decimal point.
+
+Example:
+
+age = 25
+
+⸻
+
+9. Can Python integers be very large?
+
+Answer:
+
+Yes.
+
+Python integers have unlimited precision and can store very large numbers depending on available memory.
+
+⸻
+
+10. What are different number systems supported by Python integers?
+
+Answer:
+
+Python supports:
+
+* Decimal (10)
+* Binary (0b1010)
+* Octal (0o12)
+* Hexadecimal (0xA)
+
+⸻
+
+11. What is a float?
+
+Answer:
+
+A float stores decimal numbers.
+
+Example:
+
+price = 99.99
+
+⸻
+
+12. Can float values be written in exponential form?
+
+Answer:
+
+Yes.
+
+Example:
+
+x = 3.14e2
+
+Output:
+
+314.0
+
+⸻
+
+13. What is a complex number?
+
+Answer:
+
+A complex number contains both real and imaginary parts.
+
+Example:
+
+x = 3 + 4j
+
+Python uses j for the imaginary part.
+
+⸻
+
+14. What is the Boolean data type?
+
+Answer:
+
+Boolean has only two values:
+
+* True
+* False
+
+It is mainly used in conditions and comparisons.
+
+⸻
+
+15. Is True equal to 1 and False equal to 0?
+
+Answer:
+
+Yes.
+
+Internally:
+
+True == 1
+False == 0
+
+⸻
+
+16. What is a string?
+
+Answer:
+
+A string is a sequence of Unicode characters enclosed in single, double, or triple quotes.
+
+Example:
+
+name = "Python"
+
+⸻
+
+17. Is Python string mutable?
+
+Answer:
+
+No.
+
+Strings are immutable.
+
+Once created, they cannot be modified.
