@@ -1,0 +1,555 @@
+1. What is a string in Python?
+
+Answer:
+
+A string is a sequence of Unicode characters enclosed within single quotes (' '), double quotes (" "), or triple quotes (''' ''' or """ """).
+
+Example:
+
+name = "Python"
+
+⸻
+
+2. Is a string a primitive data type in Python?
+
+Answer:
+
+Yes.
+
+str is one of Python’s built-in basic data types used to store text.
+
+⸻
+
+3. What are Unicode characters?
+
+Answer:
+
+Unicode is a universal character encoding standard that represents letters, numbers, symbols, emojis, and characters from almost every language.
+
+Example:
+
+name = "भारत"
+emoji = "😊"
+
+Python strings support Unicode by default.
+
+⸻
+
+4. Why does Python use Unicode?
+
+Answer:
+
+Unicode allows Python programs to work with multiple languages and special characters, making applications international and portable.
+
+⸻
+
+5. How can you create a string in Python?
+
+Answer:
+
+Strings can be created using:
+
+* Single quotes
+* Double quotes
+* Triple single quotes
+* Triple double quotes
+
+Example:
+
+a = 'Python'
+b = "Python"
+c = '''Python'''
+d = """Python"""
+
+⸻
+
+6. What is the difference between single and double quotes?
+
+Answer:
+
+There is no functional difference.
+
+Both create string objects.
+
+Example:
+
+name1 = 'Python'
+name2 = "Python"
+
+⸻
+
+7. When should we use triple quotes?
+
+Answer:
+
+Triple quotes are mainly used for:
+
+* Multi-line strings
+* Documentation (Docstrings)
+
+Example:
+
+message = """
+Welcome
+to
+Python
+"""
+
+⸻
+
+8. What is a docstring?
+
+Answer:
+
+A docstring is a multi-line string used to document modules, classes, and functions.
+
+Example:
+
+def add():
+    """Returns sum of two numbers"""
+
+⸻
+
+9. Is a string mutable?
+
+Answer:
+
+No.
+
+Strings are immutable, meaning they cannot be modified after creation.
+
+⸻
+
+10. What does immutable mean?
+
+Answer:
+
+Immutable means the object cannot be changed after it is created.
+
+If modifications are needed, Python creates a new string.
+
+⸻
+
+11. How do you access characters in a string?
+
+Answer:
+
+Characters are accessed using indexing.
+
+Example:
+
+name = "Python"
+print(name[0])
+
+Output:
+
+P
+
+⸻
+
+12. What is indexing?
+
+Answer:
+
+Indexing is the process of accessing individual characters of a string using their position.
+
+⸻
+
+13. From where does positive indexing start?
+
+Answer:
+
+Positive indexing starts from 0.
+
+Example:
+
+name = "Python"
+P  y  t  h  o  n
+0  1  2  3  4  5
+
+⸻
+
+14. From where does negative indexing start?
+
+Answer:
+
+Negative indexing starts from -1, which represents the last character.
+
+Example:
+
+name = "Python"
+P  y  t  h  o  n
+-6 -5 -4 -3 -2 -1
+
+⸻
+
+15. Why do we use negative indexing?
+
+Answer:
+
+Negative indexing allows us to access characters from the end of the string without knowing its length.
+
+⸻
+
+16. What is the output?
+
+name = "Python"
+print(name[0])
+
+Answer:
+
+P
+
+⸻
+
+17. What is the output?
+
+name = "Python"
+print(name[-1])
+
+Answer:
+
+n
+
+⸻
+
+18. What is the output?
+
+name = "Python"
+print(name[3])
+
+Answer:
+
+h
+
+⸻
+
+19. What is the output?
+
+name = "Python"
+print(name[-3])
+
+Answer:
+
+h
+
+⸻
+
+20. What happens if you access an invalid index?
+
+Example:
+
+name = "Python"
+print(name[10])
+
+Answer:
+
+Python raises
+
+IndexError: string index out of range
+
+⸻
+
+21. Can indexing modify a string?
+
+Answer:
+
+No.
+
+Indexing is only used to access characters.
+
+Strings cannot be modified because they are immutable.
+
+⸻
+
+22. What is the output?
+
+name = "Python"
+print(name[-6])
+
+Answer:
+
+P
+
+⸻
+
+23. What is the output?
+
+text = "Hello"
+print(text[4])
+
+Answer:
+
+o
+
+⸻
+
+24. What is the output?
+
+text = "Hello"
+print(text[-5])
+
+Answer:
+
+H
+
+⸻
+
+25. Can a string contain numbers?
+
+Answer:
+
+Yes.
+
+Example:
+
+mobile = "9876543210"
+
+Although it contains digits, it is still a string.
+
+⸻
+
+26. Can a string contain special characters?
+
+Answer:
+
+Yes.
+
+Example:
+
+password = "@Python123!"
+
+⸻
+
+27. Can a string contain spaces?
+
+Answer:
+
+Yes.
+
+Example:
+
+city = "New Delhi"
+
+Spaces are considered characters.
+
+⸻
+
+28. What is the difference between a character and a string in Python?
+
+Answer:
+
+Python does not have a separate character data type.
+
+A single character is simply a string of length 1.
+
+Example:
+
+ch = "A"
+
+⸻
+
+29. What is the output?
+
+len("Python")
+
+Answer:
+
+6
+
+⸻
+
+30. How do you find the length of a string?
+
+Answer:
+
+Using the len() function.
+
+Example:
+
+name = "Python"
+print(len(name))
+
+⸻
+
+31. What is the output?
+
+text = "Python"
+print(text[len(text)-1])
+
+Answer:
+
+n
+
+⸻
+
+32. Which is better: positive indexing or negative indexing?
+
+Answer:
+
+Both are useful.
+
+* Positive indexing is useful when accessing characters from the beginning.
+* Negative indexing is useful when accessing characters from the end.
+
+⸻
+
+33. Can indexing be used on other Python data types?
+
+Answer:
+
+Yes.
+
+Indexing is supported by sequence types such as:
+
+* String
+* List
+* Tuple
+
+⸻
+
+34. Is indexing zero-based?
+
+Answer:
+
+Yes.
+
+The first character always has index 0.
+
+⸻
+
+35. What is the output?
+
+text = "Python"
+print(text[5])
+
+Answer:
+
+n
+
+⸻
+
+36. What is the output?
+
+text = "Python"
+print(text[-2])
+
+Answer:
+
+o
+
+⸻
+
+37. What is the output?
+
+text = "Python"
+print(text[0], text[-1])
+
+Answer:
+
+P n
+
+⸻
+
+38. Why are strings widely used in Python?
+
+Answer:
+
+Strings are used to store and process text such as:
+
+* Names
+* Email addresses
+* Passwords
+* Messages
+* File paths
+* URLs
+
+Almost every Python application uses strings.
+
+⸻
+
+39. What are some real-world uses of indexing?
+
+Answer:
+
+Indexing is commonly used to:
+
+* Read individual characters
+* Validate passwords
+* Extract initials
+* Process user input
+* Parse file names and URLs
+
+⸻
+
+40. Explain positive and negative indexing with an example.
+
+Answer:
+
+Example:
+
+name = "Python"
+
+Positive indexing:
+
+P  y  t  h  o  n
+0  1  2  3  4  5
+
+Negative indexing:
+
+P  y  t  h  o  n
+-6 -5 -4 -3 -2 -1
+
+Both methods access the same characters, but negative indexing starts from the end.
+
+⸻
+
+Coding Interview Questions
+
+41. Print the first character of a string.
+
+Answer:
+
+name = "Python"
+print(name[0])
+
+⸻
+
+42. Print the last character of a string.
+
+Answer:
+
+name = "Python"
+print(name[-1])
+
+⸻
+
+43. Print the middle character of a string.
+
+Answer:
+
+name = "Python"
+middle = len(name) // 2
+print(name[middle])
+
+⸻
+
+44. Print all characters using indexing.
+
+Answer:
+
+name = "Python"
+for i in range(len(name)):
+    print(name[i])
+
+⸻
+
+45. Write a program to print the first and last characters.
+
+Answer:
+
+name = input("Enter a string: ")
+print("First:", name[0])
+print("Last :", name[-1])
+
+⸻
