@@ -1,0 +1,591 @@
+1. What is string slicing?
+
+Answer:
+
+String slicing is used to extract a part (substring) of a string.
+
+Example:
+
+name = "Python"
+print(name[0:3])
+
+Output:
+
+Pyt
+
+⸻
+
+2. What is the syntax of string slicing?
+
+Answer:
+
+The syntax is:
+
+string[start : stop : step]
+
+* start → Starting index (inclusive)
+* stop → Ending index (exclusive)
+* step → Number of characters to skip
+
+⸻
+
+3. Is the stop index included in slicing?
+
+Answer:
+
+No.
+
+The stop index is excluded.
+
+Example:
+
+text = "Python"
+print(text[0:3])
+
+Output:
+
+Pyt
+
+Characters at indices 0, 1, and 2 are returned. Index 3 is not included.
+
+⸻
+
+4. What is the default value of the start index?
+
+Answer:
+
+The default start index is 0.
+
+Example:
+
+text = "Python"
+print(text[:3])
+
+Output:
+
+Pyt
+
+⸻
+
+5. What is the default value of the stop index?
+
+Answer:
+
+The default stop index is the length of the string.
+
+Example:
+
+text = "Python"
+print(text[2:])
+
+Output:
+
+thon
+
+⸻
+
+6. What is the default value of the step?
+
+Answer:
+
+The default value of the step is 1.
+
+⸻
+
+7. What is the output?
+
+text = "Python"
+print(text[1:5])
+
+Answer:
+
+ytho
+
+⸻
+
+8. What is the output?
+
+text = "Python"
+print(text[:4])
+
+Answer:
+
+Pyth
+
+⸻
+
+9. What is the output?
+
+text = "Python"
+print(text[3:])
+
+Answer:
+
+hon
+
+⸻
+
+10. What is the output?
+
+text = "Python"
+print(text[::2])
+
+Answer:
+
+Pto
+
+Every second character is selected.
+
+⸻
+
+11. What is the output?
+
+text = "Python"
+print(text[::-1])
+
+Answer:
+
+nohtyP
+
+This reverses the string.
+
+⸻
+
+12. Can slicing modify the original string?
+
+Answer:
+
+No.
+
+Slicing creates a new string without changing the original string.
+
+⸻
+
+String Properties
+
+13. What is immutability?
+
+Answer:
+
+Immutability means an object cannot be changed after it is created.
+
+Strings in Python are immutable.
+
+⸻
+
+14. Why are Python strings immutable?
+
+Answer:
+
+Strings are immutable because it improves:
+
+* Memory efficiency
+* Performance
+* Security
+* Reusability
+
+⸻
+
+15. Can you modify a character in a string?
+
+Example:
+
+name = "Python"
+name[0] = "J"
+
+Answer:
+
+No.
+
+Python raises:
+
+TypeError: 'str' object does not support item assignment
+
+⸻
+
+16. How can you modify a string?
+
+Answer:
+
+Since strings are immutable, create a new string.
+
+Example:
+
+name = "Python"
+name = "J" + name[1:]
+
+Output:
+
+Jython
+
+⸻
+
+Concatenation
+
+17. What is string concatenation?
+
+Answer:
+
+Concatenation means combining two or more strings using the + operator.
+
+Example:
+
+first = "Hello"
+second = "World"
+print(first + second)
+
+Output:
+
+HelloWorld
+
+⸻
+
+18. Can you concatenate a string and an integer?
+
+Answer:
+
+No.
+
+Example:
+
+"Age: " + 25
+
+Produces:
+
+TypeError
+
+Convert the integer first:
+
+"Age: " + str(25)
+
+⸻
+
+19. What is the output?
+
+"Python" + " Programming"
+
+Answer:
+
+Python Programming
+
+⸻
+
+Repetition
+
+20. What is string repetition?
+
+Answer:
+
+The * operator repeats a string multiple times.
+
+Example:
+
+print("Hi" * 3)
+
+Output:
+
+HiHiHi
+
+⸻
+
+21. What is the output?
+
+print("*" * 10)
+
+Answer:
+
+**********
+
+⸻
+
+22. What is the output?
+
+print("Python" * 2)
+
+Answer:
+
+PythonPython
+
+⸻
+
+23. Where is string repetition used?
+
+Answer:
+
+It is commonly used to:
+
+* Print patterns
+* Display separators
+* Generate repeated text
+* Format console output
+
+⸻
+
+Membership Operators
+
+24. What is the membership operator?
+
+Answer:
+
+Membership operators check whether a value exists inside a sequence.
+
+Python provides:
+
+* in
+* not in
+
+⸻
+
+25. What is the output?
+
+"Py" in "Python"
+
+Answer:
+
+True
+
+⸻
+
+26. What is the output?
+
+"Java" in "Python"
+
+Answer:
+
+False
+
+⸻
+
+27. What is the difference between in and not in?
+
+Answer:
+
+* in returns True if the value exists.
+* not in returns True if the value does not exist.
+
+⸻
+
+28. Give a real-world use of the in operator.
+
+Answer:
+
+The in operator is useful for:
+
+* Checking if a keyword exists in a sentence.
+* Validating email domains.
+* Searching for substrings.
+* Filtering text.
+
+⸻
+
+Built-in Functions
+
+29. What does len() do?
+
+Answer:
+
+len() returns the number of characters in a string.
+
+Example:
+
+len("Python")
+
+Output:
+
+6
+
+⸻
+
+30. What is the output?
+
+len("")
+
+Answer:
+
+0
+
+⸻
+
+31. What does min() return for a string?
+
+Answer:
+
+min() returns the smallest character according to Unicode (ASCII) value.
+
+Example:
+
+min("Python")
+
+Output:
+
+P
+
+⸻
+
+32. What does max() return?
+
+Answer:
+
+max() returns the largest character based on Unicode value.
+
+Example:
+
+max("Python")
+
+Output:
+
+y
+
+⸻
+
+33. Can len() be used on lists and tuples?
+
+Answer:
+
+Yes.
+
+len() works on all sequence types such as:
+
+* String
+* List
+* Tuple
+* Dictionary
+* Set
+
+⸻
+
+34. What is the output?
+
+len("Hello World")
+
+Answer:
+
+11
+
+⸻
+
+35. What is the output?
+
+len("Python123")
+
+Answer:
+
+9
+
+Numbers are also characters in a string.
+
+⸻
+
+Scenario-Based Interview Questions
+
+36. How would you reverse a string?
+
+Answer:
+
+Using slicing:
+
+text = "Python"
+print(text[::-1])
+
+Output:
+
+nohtyP
+
+⸻
+
+37. How would you extract the first five characters of a string?
+
+Answer:
+
+text = "Programming"
+print(text[:5])
+
+Output:
+
+Progr
+
+⸻
+
+38. How would you check whether a word exists in a sentence?
+
+Answer:
+
+Using the in operator.
+
+sentence = "Learning Python"
+print("Python" in sentence)
+
+Output:
+
+True
+
+⸻
+
+39. Why is string immutability useful?
+
+Answer:
+
+It improves memory usage, performance, and program reliability by preventing accidental modification of string data.
+
+⸻
+
+40. What is the difference between indexing and slicing?
+
+Answer:
+
+Indexing	Slicing
+Returns one character	Returns multiple characters (substring)
+Uses one index	Uses start, stop, and optional step
+Example: s[2]	Example: s[2:5]
+
+⸻
+
+Coding Interview Questions
+
+41. Write a program to reverse a string.
+
+Answer:
+
+text = input("Enter a string: ")
+print(text[::-1])
+
+⸻
+
+42. Write a program to print every alternate character.
+
+Answer:
+
+text = "Python Programming"
+print(text[::2])
+
+⸻
+
+43. Write a program to check whether "Python" exists in a sentence.
+
+Answer:
+
+sentence = input("Enter a sentence: ")
+if "Python" in sentence:
+    print("Found")
+else:
+    print("Not Found")
+
+⸻
+
+44. Write a program to join first and last names.
+
+Answer:
+
+first = input("First Name: ")
+last = input("Last Name: ")
+print(first + " " + last)
+
+⸻
+
+45. Write a program to print a line of 50 stars.
+
+Answer:
+
+print("*" * 50)
+
+⸻
