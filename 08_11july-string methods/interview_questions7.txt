@@ -1,0 +1,553 @@
+1. What are string methods in Python?
+
+Answer:
+
+String methods are built-in functions associated with string objects that allow us to perform operations such as validation, searching, case conversion, and formatting.
+
+Example:
+
+text = "python"
+print(text.upper())
+
+⸻
+
+2. Why are string methods useful?
+
+Answer:
+
+String methods help perform common text operations easily without writing complex logic. They improve code readability and reduce development time.
+
+⸻
+
+3. How do you call a string method?
+
+Answer:
+
+Use the dot (.) operator.
+
+Syntax:
+
+string_object.method_name()
+
+Example:
+
+name = "python"
+print(name.upper())
+
+⸻
+
+4. Do string methods modify the original string?
+
+Answer:
+
+Most string methods return a new string because strings are immutable in Python.
+
+Example:
+
+text = "Python"
+new_text = text.lower()
+
+The original text remains unchanged.
+
+⸻
+
+isalpha()
+
+5. What does isalpha() do?
+
+Answer:
+
+isalpha() returns True if all characters in the string are alphabetic letters.
+
+Otherwise, it returns False.
+
+⸻
+
+6. What is the output?
+
+"Python".isalpha()
+
+Answer:
+
+True
+
+⸻
+
+7. What is the output?
+
+"Python123".isalpha()
+
+Answer:
+
+False
+
+Because the string contains digits.
+
+⸻
+
+8. Does isalpha() allow spaces?
+
+Answer:
+
+No.
+
+Example:
+
+"Hello World".isalpha()
+
+Output:
+
+False
+
+Spaces are not alphabetic characters.
+
+⸻
+
+isdigit()
+
+9. What does isdigit() do?
+
+Answer:
+
+It returns True if every character in the string is a digit.
+
+⸻
+
+10. What is the output?
+
+"12345".isdigit()
+
+Answer:
+
+True
+
+⸻
+
+11. What is the output?
+
+"123abc".isdigit()
+
+Answer:
+
+False
+
+⸻
+
+12. Can isdigit() identify decimal numbers?
+
+Example:
+
+"12.5".isdigit()
+
+Answer:
+
+No.
+
+Output:
+
+False
+
+The decimal point (.) is not considered a digit.
+
+⸻
+
+isalnum()
+
+13. What does isalnum() do?
+
+Answer:
+
+It returns True if all characters are either alphabets or digits.
+
+⸻
+
+14. What is the output?
+
+"Python123".isalnum()
+
+Answer:
+
+True
+
+⸻
+
+15. What is the output?
+
+"Python_123".isalnum()
+
+Answer:
+
+False
+
+The underscore (_) is neither a letter nor a digit.
+
+⸻
+
+16. Does isalnum() allow spaces?
+
+Answer:
+
+No.
+
+Example:
+
+"Hello World".isalnum()
+
+Output:
+
+False
+
+⸻
+
+islower()
+
+17. What does islower() do?
+
+Answer:
+
+It returns True if all alphabetic characters are lowercase.
+
+⸻
+
+18. What is the output?
+
+"python".islower()
+
+Answer:
+
+True
+
+⸻
+
+19. What is the output?
+
+"Python".islower()
+
+Answer:
+
+False
+
+⸻
+
+isupper()
+
+20. What does isupper() do?
+
+Answer:
+
+It returns True if all alphabetic characters are uppercase.
+
+⸻
+
+21. What is the output?
+
+"PYTHON".isupper()
+
+Answer:
+
+True
+
+⸻
+
+22. What is the output?
+
+"Python".isupper()
+
+Answer:
+
+False
+
+⸻
+
+startswith()
+
+23. What does startswith() do?
+
+Answer:
+
+It checks whether a string starts with the specified prefix.
+
+⸻
+
+24. What is the output?
+
+text = "Python Programming"
+print(text.startswith("Python"))
+
+Answer:
+
+True
+
+⸻
+
+25. Is startswith() case-sensitive?
+
+Answer:
+
+Yes.
+
+Example:
+
+"Python".startswith("python")
+
+Output:
+
+False
+
+⸻
+
+endswith()
+
+26. What does endswith() do?
+
+Answer:
+
+It checks whether a string ends with the specified suffix.
+
+⸻
+
+27. What is the output?
+
+text = "Python Programming"
+print(text.endswith("Programming"))
+
+Answer:
+
+True
+
+⸻
+
+28. Is endswith() case-sensitive?
+
+Answer:
+
+Yes.
+
+Example:
+
+"Python".endswith("THON")
+
+Output:
+
+False
+
+⸻
+
+find()
+
+29. What does the find() method do?
+
+Answer:
+
+It returns the index of the first occurrence of a substring.
+
+If the substring is not found, it returns -1.
+
+⸻
+
+30. What is the output?
+
+text = "Python Programming"
+print(text.find("Python"))
+
+Answer:
+
+0
+
+⸻
+
+31. What is the output?
+
+text = "Python Programming"
+print(text.find("Java"))
+
+Answer:
+
+-1
+
+⸻
+
+32. What is the difference between find() and index()?
+
+Answer:
+
+find()	index()
+Returns -1 if substring is not found	Raises ValueError if substring is not found
+
+⸻
+
+33. What is the output?
+
+text = "banana"
+print(text.find("na"))
+
+Answer:
+
+2
+
+It returns the first occurrence.
+
+⸻
+
+Scenario-Based Interview Questions
+
+34. How would you validate that a username contains only letters?
+
+Answer:
+
+Use:
+
+username.isalpha()
+
+⸻
+
+35. How would you validate that an OTP contains only digits?
+
+Answer:
+
+Use:
+
+otp.isdigit()
+
+⸻
+
+36. How would you check whether a product code contains only letters and numbers?
+
+Answer:
+
+Use:
+
+product_code.isalnum()
+
+⸻
+
+37. How would you check whether a file name starts with "IMG_"?
+
+Answer:
+
+Use:
+
+filename.startswith("IMG_")
+
+⸻
+
+38. How would you verify that a file is a PDF?
+
+Answer:
+
+Use:
+
+filename.endswith(".pdf")
+
+⸻
+
+39. How would you search for a word inside a sentence?
+
+Answer:
+
+Use:
+
+sentence.find("Python")
+
+If the result is not -1, the word exists.
+
+⸻
+
+Coding Interview Questions
+
+40. Write a program to check whether the input contains only alphabets.
+
+Answer:
+
+text = input("Enter text: ")
+if text.isalpha():
+    print("Only alphabets")
+else:
+    print("Contains other characters")
+
+⸻
+
+41. Write a program to validate a PIN.
+
+Answer:
+
+pin = input("Enter PIN: ")
+if pin.isdigit():
+    print("Valid PIN")
+else:
+    print("Invalid PIN")
+
+⸻
+
+42. Write a program to check whether a string starts with "https".
+
+Answer:
+
+url = input("Enter URL: ")
+print(url.startswith("https"))
+
+⸻
+
+43. Write a program to check whether a file ends with .txt.
+
+Answer:
+
+filename = input("Enter file name: ")
+print(filename.endswith(".txt"))
+
+⸻
+
+44. Write a program to search for "Python" inside a sentence.
+
+Answer:
+
+sentence = input("Enter sentence: ")
+index = sentence.find("Python")
+if index != -1:
+    print("Found at:", index)
+else:
+    print("Not Found")
+
+⸻
+
+45. Write a program to check whether a string is entirely uppercase.
+
+Answer:
+
+text = input("Enter text: ")
+print(text.isupper())
+
+⸻
+
+Advanced Interview Questions
+
+46. Why does find() return -1 instead of raising an exception?
+
+Answer:
+
+Returning -1 allows developers to safely check whether a substring exists without handling exceptions, making it suitable for search operations.
+
+⸻
+
+47. Why are methods like isalpha() and isdigit() useful in input validation?
+
+Answer:
+
+They simplify validation by providing built-in checks for common input patterns, reducing the need for custom logic and making code more reliable.
+
+⸻
+
+48. Which method would you use to validate an email address?
+
+Answer:
+
+There is no single string method to fully validate an email address. Basic checks can use methods like find() or endswith(), but robust validation is typically done using regular expressions (re module).
+
+⸻
+
+49. Can isalpha() and isalnum() recognize Unicode characters?
+
+Answer:
+
+Yes. They support Unicode letters and digits. For example, alphabetic characters from many languages are considered valid by isalpha().
+
